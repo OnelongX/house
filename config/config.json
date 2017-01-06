@@ -1,0 +1,1296 @@
+{
+  "cityList": [
+    {
+      "value": "nanjing",
+      "text": "南京"
+    },
+    {
+      "value": "shenzhen",
+      "text": "深圳"
+    },
+    {
+      "value": "beijing",
+      "text": "北京"
+    },
+    {
+      "value": "shanghai",
+      "text": "上海"
+    },
+    {
+      "value": "chengdu",
+      "text": "成都"
+    },
+    {
+      "value": "foshan",
+      "text": "佛山"
+    },
+    {
+      "value": "changsha",
+      "text": "长沙"
+    },
+    {
+      "value": "guangzhou",
+      "text": "广州"
+    },
+    {
+      "value": "suzhou",
+      "text": "苏州"
+    },
+    {
+      "value": "kunshan",
+      "text": "昆山"
+    }
+  ],
+  "citymap": {
+    "nanjing": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/nj/loupan/rs${name}"
+      },
+      {
+        "name": "新浪乐居",
+        "path": "http://m.leju.com/house/nanjing/s/?keyword=${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/nj/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/nj/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/nj/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/nanjing/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/nanjing/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/nj/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/nj/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/nj/loupan/?q=${name}"
+      }
+    ],
+    "shenzhen": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/sz/loupan/rs${name}"
+      },
+      {
+        "name": "新浪乐居",
+        "path": "http://m.leju.com/house/sz/s/?keyword=${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/sz/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/sz/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/sz/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/shenzhen/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/shenzhen/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/sz/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/sz/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/sz/loupan/?q=${name}"
+      }
+    ],
+    "beijing": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/bj/loupan/rs${name}"
+      },
+      {
+        "name": "新浪乐居",
+        "path": "http://m.leju.com/house/bj/s/?keyword=${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/bj/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/bj/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/bj/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/beijing/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/beijing/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/bj/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/bj/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/bj/loupan/?q=${name}"
+      }
+    ],
+    "shanghai": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/sh/loupan/rs${name}"
+      },
+      {
+        "name": "新浪乐居",
+        "path": "http://m.leju.com/house/sh/s/?keyword=${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/sh/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/sh/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/sh/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/shanghai/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/shanghai/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/sh/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/sh/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/sh/loupan/?q=${name}"
+      }
+    ],
+    "chengdu": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/cd/loupan/rs${name}"
+      },
+      {
+        "name": "新浪乐居",
+        "path": "http://m.leju.com/house/sc/s/?keyword=${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/cd/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/cd/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/cd/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/chengdu/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/chengdu/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/chengdu/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/cd/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/cd/loupan/?q=${name}"
+      }
+    ],
+    "guangzhou": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/gz/loupan/rs${name}"
+      },
+      {
+        "name": "新浪乐居",
+        "path": "http://m.leju.com/house/gz/s/?keyword=${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/gz/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/gz/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/gz/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/guangzhou/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/guangzhou/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/gz/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/gz/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/gz/loupan/?q=${name}"
+      }
+    ],
+    "zhuhai": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/zh/loupan/rs${name}"
+      },
+      {
+        "name": "新浪乐居",
+        "path": "http://m.leju.com/house/zhuhai/s/?keyword=${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/zh/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/zh/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/zh/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/zh/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/zhuhai/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/zhuhai/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/zh/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/zh/loupan/?q=${name}"
+      }
+    ],
+    "zhongshan": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/zs/loupan/rs${name}"
+      },
+      {
+        "name": "新浪乐居",
+        "path": "http://m.leju.com/house/zhongshan/s/?keyword=${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/zs/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/zs/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/zs/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/zhongshan/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/zhongshan/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/zs/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/zs/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/zs/loupan/?q=${name}"
+      }
+    ],
+    "dongguan": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/dg/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/dg/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/dg/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/dg/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/dongguan/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/dongguan/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/dg/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/dg/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/dg/loupan/?q=${name}"
+      }
+    ],
+    "foshan": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/fs/loupan/rs${name}"
+      },
+      {
+        "name": "新浪乐居",
+        "path": "http://m.leju.com/house/fs/s/?keyword=${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/fs/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/fs/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/fs/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/foshan/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/foshan/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/foshan/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/fs/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/fs/loupan/?q=${name}"
+      }
+    ],
+    "xiamen": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/xm/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/xm/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/xm/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/xm/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/xiamen/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/xiamen/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/xm/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/xm/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/xm/loupan/?q=${name}"
+      }
+    ],
+    "hangzhou": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/hz/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/hz/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/hz/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/hz/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/hangzhou/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/hangzhou/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/hz/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/hz/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/hz/loupan/?q=${name}"
+      }
+    ],
+    "chongqing": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/cq/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/cq/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/cq/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/cq/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/chongqing/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/chongqing/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/cq/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/cq/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/cq/loupan/?q=${name}"
+      }
+    ],
+    "changsha": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/cs/loupan/rs${name}"
+      },
+      {
+        "name": "新浪乐居",
+        "path": "http://m.leju.com/house/cs/s/?keyword=${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/cs/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/cs/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/cs/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/changsha/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/changsha/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/changsha/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/cs/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/cs/loupan/?q=${name}"
+      }
+    ],
+    "dalian": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/dl/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/dl/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/dl/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/dl/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/dalian/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/dalian/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/dl/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/dl/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/dl/loupan/?q=${name}"
+      }
+    ],
+    "haikou": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/hk/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/hk/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/hk/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/hk/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/haikou/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/haikou/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/hk/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/hk/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/hk/loupan/?q=${name}"
+      }
+    ],
+    "hefei": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/hf/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/hf/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/hf/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/hf/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://m.qfang.com/hefei/newhouse?keyword=${name}&insource=index_search"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/hefei/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/hf/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/hf/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/hf/loupan/?q=${name}"
+      }
+    ],
+    "jinan": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/jn/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/jn/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/jn/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/jn/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://jinan.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/jinan/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/jn/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/jn/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/jn/loupan/?q=${name}"
+      }
+    ],
+    "lingshui": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/ls/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/jn/ls/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/ls/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/ls/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://lingshui.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/lingshui/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/ls/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/ls/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/ls/loupan/?q=${name}"
+      }
+    ],
+    "langfang": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/lf/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/lf/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/lf/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/lf/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://langfang.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/langfang/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/lf/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/lf/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/lf/loupan/?q=${name}"
+      }
+    ],
+    "qingdao": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/qd/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/qd/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/qd/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/qd/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://qingdao.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/qingdao/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/qd/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/qd/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/qd/loupan/?q=${name}"
+      }
+    ],
+    "qionghai": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/qh/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/qh/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/qh/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/qh/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://qionghai.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/qionghai/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/qh/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/qh/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/qh/loupan/?q=${name}"
+      }
+    ],
+    "suzhou": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/su/loupan/rs${name}"
+      },
+      {
+        "name": "新浪乐居",
+        "path": "http://m.leju.com/house/suzhou/s/?keyword=${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/suzhou/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/suzhou/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/suzhou/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://suzhou.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://m.fangdd.com/xf/suzhou/loupan?keyword=${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/suzhou/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/suzhou/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/su/loupan/?q=${name}"
+      }
+    ],
+    "shijiazhuang": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/sjz/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/sjz/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/sjz/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/sjz/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://shijiazhuang.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/shijiazhuang/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/shijiazhuang/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/sjz/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/sjz/loupan/?q=${name}"
+      }
+    ],
+    "shenyang": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/sy/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/sy/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/sy/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/sy/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://shenyang.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/shenyang/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/sy/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/sy/newhouse/_k${name}/",
+        "path2": "http://newhouse.sy.house365.com/house/itemname-${name}"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/sy/loupan/?q=${name}"
+      }
+    ],
+    "sanya": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/san/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/sanya/sanya/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/sanya/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/sanya/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://sanya.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/sanya/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/sanya/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/sanya/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/sanya/loupan/?q=${name}"
+      }
+    ],
+    "tianjin": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/tj/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/tj/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/tj/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/tj/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://tianjin.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/tianjin/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/tj/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/tj/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/tj/loupan/?q=${name}"
+      }
+    ],
+    "wenchang": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/wc/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/wc/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/wc/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/wc/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://wenchang.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/wenchang/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/wc/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/wc/newhouse/_k${name}/",
+        "path2": "http://newhouse.wc.house365.com/house/itemname-${name}"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/wc/loupan/?q=${name}"
+      }
+    ],
+    "wanning": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/wn/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/wn/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/wn/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/wn/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://wanning.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/wanning/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/wn/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/wn/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/wn/loupan/?q=${name}"
+      }
+    ],
+    "xian": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/xa/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/xa/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/xa/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/xa/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://xian.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/xian/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/xa/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/xa/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/xa/loupan/?q=${name}"
+      }
+    ],
+    "yantai": [
+      {
+        "name": "链家",
+        "path": "http://m.lianjia.com/yt/loupan/rs${name}"
+      },
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/yt/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/yt/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "腾讯房产",
+        "path": "http://m.db.house.qq.com/search/kw_${name}/yantai/"
+      },
+      {
+        "name": "Q房网",
+        "path": "http://yantai.qfang.com/newhouse/list?keyword=${name}"
+      },
+      {
+        "name": "房多多",
+        "path": "http://esf.fangdd.com/yantai/list/q${name}"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/yantai/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/yt/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/yt/loupan/?q=${name}"
+      }
+    ],
+    "kunshan": [
+      {
+        "name": "网易房产",
+        "path": "http://m.house.163.com/ks/xf/search.html?keyword=${name}"
+      },
+      {
+        "name": "新浪乐居",
+        "path": "http://m.leju.com/house/ks/s/?keyword=${name}"
+      },
+      {
+        "name": "搜狐焦点",
+        "path": "http://m.focus.cn/ks/loupan/?q=${name}&fromSearch=true"
+      },
+      {
+        "name": "平安好房产",
+        "path": "http://m.pinganfang.com/ajax/kunshan/recommend/search.xf.html?kw=${name}"
+      },
+      {
+        "name": "365淘房",
+        "path": "http://m.house365.com/ks/newhouse/_k${name}/"
+      },
+      {
+        "name": "安居客",
+        "path": "http://m.anjuke.com/ks/loupan/?q=${name}"
+      }
+    ]
+  }
+}
