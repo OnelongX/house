@@ -82,6 +82,10 @@
       {
         "name": "安居客",
         "path": "http://m.anjuke.com/nj/loupan/?q=${name}"
+      },
+      {
+        "name": "房天下",
+        "path": "http://m.fang.com/esf/?c=esf&a=ajaxGetAllSearchTip&q=${name}&city=nanjing&type=3"
       }
     ],
     "shenzhen": [
@@ -124,6 +128,10 @@
       {
         "name": "安居客",
         "path": "http://m.anjuke.com/sz/loupan/?q=${name}"
+      },
+      {
+        "name": "房天下",
+        "path": "http://m.fang.com/esf/?c=esf&a=ajaxGetAllSearchTip&q=${name}&city=sz&type=3"
       }
     ],
     "beijing": [
@@ -166,6 +174,10 @@
       {
         "name": "安居客",
         "path": "http://m.anjuke.com/bj/loupan/?q=${name}"
+      },
+      {
+        "name": "房天下",
+        "path": "http://m.fang.com/esf/?c=esf&a=ajaxGetAllSearchTip&q=${name}&city=bj&type=3"
       }
     ],
     "shanghai": [
@@ -208,6 +220,10 @@
       {
         "name": "安居客",
         "path": "http://m.anjuke.com/sh/loupan/?q=${name}"
+      },
+      {
+        "name": "房天下",
+        "path": "http://m.fang.com/esf/?c=esf&a=ajaxGetAllSearchTip&q=${name}&city=sh&type=3"
       }
     ],
     "chengdu": [
@@ -250,6 +266,10 @@
       {
         "name": "安居客",
         "path": "http://m.anjuke.com/cd/loupan/?q=${name}"
+      },
+      {
+        "name": "房天下",
+        "path": "http://m.fang.com/esf/?c=esf&a=ajaxGetAllSearchTip&q=${name}&city=cd&type=3"
       }
     ],
     "guangzhou": [
@@ -292,6 +312,10 @@
       {
         "name": "安居客",
         "path": "http://m.anjuke.com/gz/loupan/?q=${name}"
+      },
+      {
+        "name": "房天下",
+        "path": "http://m.fang.com/esf/?c=esf&a=ajaxGetAllSearchTip&q=${name}&city=gz&type=3"
       }
     ],
     "zhuhai": [
@@ -456,6 +480,10 @@
       {
         "name": "安居客",
         "path": "http://m.anjuke.com/fs/loupan/?q=${name}"
+      },
+      {
+        "name": "房天下",
+        "path": "http://m.fang.com/esf/?c=esf&a=ajaxGetAllSearchTip&q=${name}&city=fs&type=3"
       }
     ],
     "xiamen": [
@@ -612,6 +640,10 @@
       {
         "name": "安居客",
         "path": "http://m.anjuke.com/cs/loupan/?q=${name}"
+      },
+      {
+        "name": "房天下",
+        "path": "http://m.fang.com/esf/?c=esf&a=ajaxGetAllSearchTip&q=${name}&city=cs&type=3"
       }
     ],
     "dalian": [
@@ -958,6 +990,10 @@
       {
         "name": "安居客",
         "path": "http://m.anjuke.com/su/loupan/?q=${name}"
+      },
+      {
+        "name": "房天下",
+        "path": "http://m.fang.com/esf/?c=esf&a=ajaxGetAllSearchTip&q=${name}&city=suzhou&type=3"
       }
     ],
     "shijiazhuang": [
@@ -1290,6 +1326,10 @@
       {
         "name": "安居客",
         "path": "http://m.anjuke.com/ks/loupan/?q=${name}"
+      },
+      {
+        "name": "房天下",
+        "path": "http://m.fang.com/esf/?c=esf&a=ajaxGetAllSearchTip&q=${name}&city=ks&type=3"
       }
     ]
   }

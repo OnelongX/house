@@ -1,9 +1,7 @@
 package com.sxdt.house;
 
-import com.sxdt.house.model.AppConfig;
-import com.sxdt.house.model.Option;
-import com.sxdt.house.model.PAVo;
-import com.sxdt.house.model.Web;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.sxdt.house.model.*;
 import com.sxdt.house.utils.HttpUtil;
 import com.sxdt.house.utils.JsonUtils;
 import com.sxdt.house.utils.StringUtil;
@@ -22,7 +20,9 @@ import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -98,6 +98,10 @@ public class Controller implements Initializable {
                             case "新浪乐居":
                                 leju(houseStr, web);
                                 break;
+                            case "房天下":
+                                fang(houseStr, web);
+                                break;
+
                         }
                     }
                     log("\n任务结束<<<<<<<<<<");
@@ -109,6 +113,96 @@ public class Controller implements Initializable {
         new Thread(task).start();
     }
 
+    private void fang(String houseStr, Web web) {
+        boolean success = false;
+        String url = StringUtil.renderString(web.getPath(), houseStr);
+        try {
+            String body = HttpUtil.get(url);
+
+            List<Map<String, String>> list = JsonUtils.deserialize(body, new TypeReference<List<Map<String, String>>>() {
+            });
+
+            if (list != null && list.size() > 0) {
+
+                for (Map<String, String> map : list) {
+
+                    if (map.get("projname").indexOf(houseStr) != -1) {
+
+                        String dUrl = map.get("loupanurl");
+                        if (dUrl.startsWith("//")) {
+                            dUrl = "http:" + dUrl;
+                        }
+
+                        System.out.println(web.getName() + "=>" + dUrl);
+                        log(web.getName() + "\t\t=>\t" +dUrl);
+                        success = true;
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (!success) {
+            log(web.getName() + "\t\t=>\t");
+        }
+
+        /*
+        boolean success = false;
+        String url;
+            url = StringUtil.renderString(web.getPath(), houseStr);
+
+        try {
+            String body = HttpUtil.get(url);
+
+            int listIndex = body.indexOf("<ul id=\"xfContentList\">");
+
+            if (listIndex != -1)
+            {
+                int start = body.indexOf("<li class=\"",listIndex);
+                while (start != -1) {
+                    int end = body.indexOf("</li>", start + 4);
+                    String content;
+                    if (end <= -1) {
+                        content = body.substring(start);
+                    } else {
+                        content = body.substring(start, end);
+                    }
+                    //System.out.println(content);
+                    if (content.indexOf(houseStr) != -1) {
+                        //Pattern p = Pattern.compile("<(\\w+)([^<>]*)>([^<>]+)</\\1>");
+                        content = content.replaceAll("\r","").replaceAll("\t","").replaceAll("\n","");
+                        Pattern pattern = Pattern.compile("<a.+?href=\"(.+?)\"");
+                        Matcher m = pattern.matcher(content);
+                        if (m.find()) {
+                            //String dUrl = url.substring(0,url.indexOf("/",10)) + m.group(1);
+                            String dUrl = m.group(1).trim();
+                            if(dUrl.startsWith("//")){
+                                dUrl = "http:"+dUrl;
+                            }
+                            System.out.println(web.getName() + "=>" + dUrl);
+                            log(web.getName() + "\t\t=>\t" + dUrl);
+                            success = true;
+                            return;
+                        }
+                        break;
+                    }
+                    start = body.indexOf("<a data-id=\"", end+10);
+                }
+            }
+
+        } catch (
+                Exception e)
+
+        {
+            e.printStackTrace();
+        }
+
+        if (!success) {
+            log(web.getName() + "\t\t=>\t");
+        }
+        */
+    }
+
     private void leju(String houseStr, Web web) {
         boolean success = false;
         String url = StringUtil.renderString(web.getPath(), houseStr);
@@ -116,9 +210,8 @@ public class Controller implements Initializable {
             String body = HttpUtil.get(url);
             //System.out.println(body);
             int listIndex = body.indexOf("<ul class=\"y_subList01 pd30 y_subList01_bdr\" id=\"house_list\">");
-            if (listIndex != -1)
-            {
-                int start = body.indexOf("<li>",listIndex);
+            if (listIndex != -1) {
+                int start = body.indexOf("<li>", listIndex);
                 while (start != -1) {
                     int end = body.indexOf("</li>", start + 4);
                     String content;
@@ -133,7 +226,7 @@ public class Controller implements Initializable {
                         Pattern pattern = Pattern.compile("<a.+?href=\"(.+?)\"");
                         Matcher m = pattern.matcher(content);
                         if (m.find()) {
-                            String dUrl = url.substring(0,url.indexOf("/",10)) + m.group(1);
+                            String dUrl = url.substring(0, url.indexOf("/", 10)) + m.group(1);
                             System.out.println(web.getName() + "=>" + dUrl);
                             log(web.getName() + "\t\t=>\t" + dUrl);
                             success = true;
@@ -141,7 +234,7 @@ public class Controller implements Initializable {
                         }
                         break;
                     }
-                    start = body.indexOf("<a data-id=\"", end+10);
+                    start = body.indexOf("<a data-id=\"", end + 10);
                 }
             }
 
@@ -166,8 +259,7 @@ public class Controller implements Initializable {
             String body = HttpUtil.get(url);
             //System.out.println(body);
             int listIndex = body.indexOf("<div id=\"content\">");
-            if (listIndex != -1)
-            {
+            if (listIndex != -1) {
                 int start = body.indexOf("<a data-id=\"");
                 while (start != -1) {
                     int end = body.indexOf("<a data-id=\"", start + 10);
@@ -191,7 +283,7 @@ public class Controller implements Initializable {
                         }
                         break;
                     }
-                    start = body.indexOf("<a data-id=\"", end+10);
+                    start = body.indexOf("<a data-id=\"", end + 10);
                 }
             }
 
@@ -299,10 +391,13 @@ public class Controller implements Initializable {
             String body = HttpUtil.get(url);
             PAVo paVo = JsonUtils.deserialize(body, PAVo.class);
             if (paVo != null && !paVo.hasError && paVo.success && paVo.data != null && paVo.data.size() > 0) {
-                if (paVo.data.get(0).sName.indexOf(houseStr) != -1) {
-                    System.out.println(web.getName() + "=>" + paVo.data.get(0).sUrl);
-                    log(web.getName() + "\t=>\t" + paVo.data.get(0).sUrl);
-                    success = true;
+                for(PAItemVo paItemVo : paVo.data) {
+                    if (paItemVo.sName.indexOf(houseStr) != -1) {
+                        System.out.println(web.getName() + "=>" + paItemVo.sUrl);
+                        log(web.getName() + "\t=>\t" + paItemVo.sUrl);
+                        success = true;
+                        break;
+                    }
                 }
             }
         } catch (Exception e) {
@@ -324,20 +419,19 @@ public class Controller implements Initializable {
             int listIndex = body.indexOf("<ul class=\"list-holder list-lp\">");
 
             if (listIndex != -1) {
-                int end = body.indexOf("</ul>",listIndex+10);
+                int end = body.indexOf("</ul>", listIndex + 10);
                 String content;
                 if (end <= -1) {
                     content = body.substring(listIndex);
                 } else {
                     content = body.substring(listIndex, end);
                 }
-                if (content.indexOf(houseStr) != -1)
-                {
+                if (content.indexOf(houseStr) != -1) {
                     //Pattern p = Pattern.compile("<(\\w+)([^<>]*)>([^<>]+)</\\1>");
                     Pattern pattern = Pattern.compile("<a.+?href=\"(.+?)\"");
                     Matcher m = pattern.matcher(content);
                     while (m.find()) {
-                         String dUrl = url.substring(0,url.indexOf("/",10)) + m.group(1);
+                        String dUrl = url.substring(0, url.indexOf("/", 10)) + m.group(1);
                         System.out.println(web.getName() + "=>" + dUrl);
                         log(web.getName() + "\t\t=>\t" + dUrl);
                         success = true;
@@ -384,8 +478,8 @@ public class Controller implements Initializable {
                     Matcher m = pattern.matcher(content);
                     while (m.find()) {
                         String dUrl = url.substring(0, url.indexOf("/", 10)) + m.group(1);
-                        if(dUrl.indexOf("?")!=-1){
-                            dUrl = dUrl.substring(0,dUrl.indexOf("?"));
+                        if (dUrl.indexOf("?") != -1) {
+                            dUrl = dUrl.substring(0, dUrl.indexOf("?"));
                         }
                         System.out.println(web.getName() + "=>" + dUrl);
                         log(web.getName() + "\t\t=>\t" + dUrl);
@@ -514,20 +608,17 @@ public class Controller implements Initializable {
                 return;
             }
             int contentStart = body.indexOf("<div class=\"loupan-list result-list\">");
-            if(contentStart != -1){
+            if (contentStart != -1) {
                 int contentEnd = body.indexOf("</section>", contentStart);
-                if(contentEnd==-1){
+                if (contentEnd == -1) {
                     log(web.getName() + "\t\t=>\t");
                     return;
                 }
-                body = body.substring(contentStart,contentEnd);
-            }else {
+                body = body.substring(contentStart, contentEnd);
+            } else {
                 log(web.getName() + "\t\t=>\t");
                 return;
             }
-
-
-
 
 
             int listIndex = body.indexOf("<div class=\"loupan-list-item result-item\"");
@@ -556,7 +647,7 @@ public class Controller implements Initializable {
                     break;
                 }
 
-                    listIndex = end;
+                listIndex = end;
 
             }
 
