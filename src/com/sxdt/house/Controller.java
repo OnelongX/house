@@ -136,6 +136,7 @@ public class Controller implements Initializable {
                         System.out.println(web.getName() + "=>" + dUrl);
                         log(web.getName() + "\t\t=>\t" +dUrl);
                         success = true;
+                        break;
                     }
                 }
             }
